@@ -1,13 +1,13 @@
-import user from './Profile/user.json';
+import user from '../data/user.json';
 import { Profile } from './Profile/Profile';
 
-import data from './Statistics/data.json';
+import data from '../data/data.json';
 import { Statistics } from './Statistics/Statistics';
 
-import friends from './Friends/friends.json';
+import friends from '../data/friends.json';
 import { FriendList } from './Friends/FriendList/FriendList';
 
-import transactions from './TransactionHistory/transactions.json';
+import transactions from '../data/transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
@@ -16,8 +16,6 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        // justifyContent: 'center',
-        // alignItems: 'center',
         fontSize: 40,
         color: '#010101',
         flexDirection: 'column',
@@ -29,7 +27,6 @@ export const App = () => {
         backgroundColor: 'muted',
       }}
     >
-      {/* React homework template */}
       <Profile
         username={user.username}
         tag={user.tag}

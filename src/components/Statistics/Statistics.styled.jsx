@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getRandomHexColor } from '../getRandomHexColor';
+import { getRandomHexColor } from '../../helper/getRandomHexColor';
 
 export const Section = styled.section`
   display: flex;
@@ -9,8 +9,6 @@ export const Section = styled.section`
   margin-bottom: ${props => props.theme.space[5]}px;
   max-width: 100%;
   width: 360px;
-
-  /* box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc; */
   border-radius: 8px;
 `;
 

@@ -46,14 +46,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   );
 };
 
-// Компонент повинен приймати кілька пропсів з інформацією про користувача:
-
-// username — ім'я користувача
-// tag — тег в соціальній мережі без @
-// location — місто і країна
-// avatar — посилання на зображення
-// stats — об'єкт з інформацією про активності
-
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
